@@ -1,0 +1,1 @@
+<?php echo 'you are in the error page';?>

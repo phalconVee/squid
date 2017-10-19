@@ -1,0 +1,267 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #f4f4f4;
+}
+#content_wrapper{
+	margin-top: 60px;
+}
+.navbar{
+	border-radius: 0;
+	margin-bottom: 0;
+}
+/* navigation bar sublist */
+/* navigation bar sublist ul*/
+.nav #navbar_sublist{
+	position: absolute;
+	z-index: 1;
+	list-style: none;
+	margin: 0;
+	padding: 5px 0;
+	background-color: #34495E;
+	width: 200px;
+	border-top: 1px solid #149c82;
+}
+/* navigation bar sublist lists (li)*/
+.nav #navbar_sublist li{
+	padding: 7px 20px;
+	background-color: #34495E;
+	cursor: pointer;
+	border-radius: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+/* navigation bar sublist li color element on hover */
+#navbar_sublist li:hover{
+	background-color: #7c8c8d;
+}
+.nav #navbar_sublist li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 20px;
+}
+.nav #navbar_sublist li a i{
+	font-size: 14px;
+	margin-right: 15px;
+	float: left;
+	line-height: 20px;
+	width: 10px;
+}
+.nav li > #navbar_sublist{
+	visibility: hidden;
+}
+.nav li:hover > #navbar_sublist{
+	visibility: visible;
+}
+.nav li #navbar_sublist{
+	transition: all 0.3s;
+	opacity: 1;
+	position: absolute;
+	visibility: hidden;
+	/*border-right: 5px solid #f1c40f;*/
+	top: 100%;
+}
+@media screen and (min-width:768px){
+	#sidebar_mainlist{
+		position: fixed;
+		list-style: none;
+		margin: 0;
+		width: 250px;
+		z-index: 3;
+		background-color: #34495e;
+		padding: 0;
+		height: 100%;
+	}
+	#sidebar_mainlist li{
+		margin-top: 5px;
+		padding: 15px;
+		position: relative;
+		vertical-align: middle;
+		cursor: pointer;
+		line-height: 15px;
+	}
+	#sidebar_mainlist li a{
+		color: #fff;
+		text-decoration: none;
+		font-size: 16px;
+	}
+	#sidebar_mainlist a span{
+		width: 15px;
+		margin-right: 15px;
+	}
+	#sidebar_mainlist a i{
+		font-size: 20px;
+		margin-right: 15px;
+		float: left;
+		line-height: 15px;
+		width: 25px;
+	}
+	#sidebar_mainlist i{
+		font-size: 10px;
+		line-height: 15px;
+		width: 25px;
+		color: #fff;
+	}
+	#sidebar_mainlist li:hover{
+		background-color: #7c8c8d;
+	}
+	#sidebar_mainlist li:hover > #sidebar_sublist{
+		opacity: 1;
+		visibility: visible;
+	}
+	/*sidebar sublist styling*/
+	#sidebar_sublist{
+		opacity: 0;
+		position: absolute;
+		visibility: hidden;
+		left: 100%;
+		top: -2%;
+		transition: all 0.3s;
+		list-style: none;
+		background-color: #34495e;
+		width: 200px;
+		padding: 5px 0;
+		border-left: 1px solid #18bc9c;
+	}
+	#sidebar_sublist li{
+		line-height: 8px;
+		padding 7px 20px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+	}
+	#sidebar_sublist li a{
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 8px;
+	}
+	#sidebar_sublist a i{
+		line-height: 8px;
+		font-size: 15px;
+		margin-right: 15px;
+		float: left;
+		width: 10px;
+	}
+	/*Main Content area without toggle*/
+	#main_area{
+		 width: 100%;
+		 overflow-x: hidden;
+		 padding-top: 50px;
+		 padding-left: 255px;
+	}
+	/*width of the sidebar when toggled*/
+	#wrapper.min_menu #sidebar_mainlist{
+		width: 0;
+		position: absolute;
+		overflow-y: hidden;
+	}
+	/*change the width of the main content area to accomodate sidebar*/
+	#wrapper.min_menu #main_area{
+		padding-left: 0 !important;
+		overflow-y: hidden;
+		overflow-x: hidden;
+	}
+	/*profile section in sidebar styling*/
+	#sidebar_mainlist .media{
+		margin: 10px;
+		color: #eee;
+		padding: 10px;
+		border-bottom: 2px solid #7c8c8d;
+	}
+	#sidebar_mainlist .media img{
+		width: 40px;
+	}
+	#sidebar_mainlist .media #icon_bar{
+		text-align: center !important;
+	}
+	#sidebar_mainlist .media .media-body i{
+		font-size: 18px !important;
+		width: 20px !important;
+	}	
+}
+/*dashboard header styling*/
+#dashboard_header{
+	margin-bottom: 10px;
+}
+/*dashboard at a glance notification link styling*/
+#main_area #glace_notification a{
+	text-decoration: none;
+}
+/*dashboard at a glance notification link hover styling*/
+#main_area #glace_notification a:hover{
+	color: #7c8c8d;
+}
+/*dashboard activity notification icon styling*/
+#main_area #glace_notification_icon{
+	font-size: 25px;
+	text-align: center;
+}
+/*dashboard activity notification styling*/
+#main_area #activity_notification img{
+	width: 50px;
+}
+/*dashboard activity notification link styling*/
+#main_area #activity_notification tbody a{
+	text-decoration: none;
+	margin-right: 10px;
+}
+/*dashboard activity notification link hover styling*/
+#main_area #activity_notification tbody a:hover{
+	color: #7c8c8d;
+}
+/*dashboard activity notification footer styling*/
+#main_area #activity_notification_footer{
+	padding: 20px;
+}
+/*add post options link*/
+#add_post_option a{
+	text-decoration: none;
+}
+/*add post options link on hover*/
+#add_post_option a:hover{
+	text-decoration: none;
+}
+/*add post tab options link*/
+.nav-tabs li a{
+	background-color: #34495e;
+	color: #fff;
+}
+/*add post tab options link on hover*/
+.nav-tabs li a:hover{
+	background-color:#7c8c8d;
+}
+/*add post panel footer text styling*/
+#add_post .panel-footer{
+	padding-top: 5px;
+	padding-bottom: 25px;
+}
+/*styling for links within a table*/
+table a {
+	margin: 5px;
+	text-align: center;
+}
+/*login page styling*/
+/*panel styling*/
+#login_area .panel{
+	margin-top: 50px;
+	border-color: #f4f4f4;
+}
+/*panel header styling*/
+#login_area .panel-heading{
+	background-color: #149c82;
+	border-bottom: #fff;
+}
+/*panel footer styling*/
+#login_area .panel-footer{
+	padding-top: 5px;
+	padding-bottom: 25px;
+}
+/*panel footer links styling*/
+#login_area .panel-footer a{
+	text-decoration: none;
+}
+/*panel footer links styling on hover*/
+#login_area .panel-footer a:hover{
+	text-decoration: none;
+}

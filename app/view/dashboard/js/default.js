@@ -1,0 +1,32 @@
+$(function(){
+	/*$.get('dashboard/aj_read', function(o){
+		for(var i = 0; i < o.length; i++){
+			$('#list_inserts').append('<div>' + o[i].article + '<a class="del" rel="'+o[i].id+'" href="#">X</a></div>');				
+		}
+		/////////////////////////////////////////
+		$('.del').click(function(){
+			del_item = $(this);
+			var id = $(this).attr('rel');
+			var url = 'dashboard/del_subj';
+			if(confirm('Are you sure?')){
+				$.post(url, {'id': id}, function(o){
+				}, 'json');
+				del_item.parent().remove();
+			}
+			return false;
+		});
+	}, 'json');
+
+	$('#random_insert').submit(function(){
+		var url = $(this).attr('action');
+		var data = $(this).serialize();
+		$.post(url, data, function(o){
+			$('#list_inserts').append('<div>' + o.article + '<a class="del" rel="'+o.id+'" href="#">X</a></div>');
+			$('#field').val('');
+			$('#c_message').html('Data created');
+			}, 'json');
+		return false;
+	});*/
+	
+});
+
