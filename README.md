@@ -1,0 +1,5 @@
+# squid
+squid project
+THIS IS EZE'S SQUID PROJECT
+
+PURPOSE: COLLABORATION
